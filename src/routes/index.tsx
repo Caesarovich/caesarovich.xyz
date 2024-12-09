@@ -1,22 +1,19 @@
-import { A } from "@solidjs/router";
 import type { IconTypes } from "solid-icons";
-import { BiLogosTypescript, BiLogosGoLang } from 'solid-icons/bi'
-import { SiDart, SiDocker, SiLinuxmint, SiNixos } from 'solid-icons/si'
+import { BiLogosGoLang, BiLogosTypescript } from "solid-icons/bi";
+import { SiDart, SiDocker, SiLinuxmint, SiNixos } from "solid-icons/si";
 import { VsCode } from "solid-icons/vs";
 
 type LanguageCardProps = {
 	name: string;
 	icon: IconTypes;
-}
+};
 
 function Card(props: LanguageCardProps) {
 	return (
-		<div class="card bg-base-300 shadow-xl animate-fade-up w-48 bg-opacity-30 h-full">
-			<div class="card-body justify-evenly items-center">
+		<div class="card h-full w-48 animate-fade-up bg-base-300 bg-opacity-30 shadow-xl">
+			<div class="card-body items-center justify-evenly">
 				<props.icon class="size-16" />
-				<h2 class="card-title text-center">
-					{props.name}
-				</h2>
+				<h2 class="card-title text-center">{props.name}</h2>
 			</div>
 		</div>
 	);
@@ -24,23 +21,24 @@ function Card(props: LanguageCardProps) {
 
 export default function Home() {
 	return (
-		<main class="container mx-auto p-6 min-h-screen overflow-visible">
+		<main class="container mx-auto min-h-screen overflow-visible p-6">
 			<section class="my-12">
-				<h1 class="text-8xl font-bold animate-fade-right">Hi,</h1>
-				<h2 class="text-6xl mt-4 animate-flip-up animate-delay-1000">I'm a Fullstack Developer</h2>
-
-
+				<h1 class="animate-fade-right font-bold text-8xl">Hi,</h1>
+				<h2 class="mt-4 animate-delay-1000 animate-flip-up text-6xl">
+					I'm a Fullstack Developer
+				</h2>
 			</section>
 
-			<section class="my-12 animate-fade animate-delay-[2500ms]">
-				<p class="text-2xl mt-4">
-					Well I don't really have much to say... So here's a bunch of random stuff about me.
+			<section class="my-12 animate-delay-[2500ms] animate-fade">
+				<p class="mt-4 text-2xl">
+					Well I don't really have much to say... So here's a bunch of random
+					stuff about me.
 				</p>
 			</section>
 
-			<section class="my-12 animate-fade animate-delay-[3500ms]">
-				<h3 class="text-4xl font-semibold text-center">My Environment 🖥️</h3>
-				<ul class="flex mt-6 gap-8 overflow-visible flex-wrap justify-center">
+			<section class="my-12 animate-delay-[3500ms] animate-fade">
+				<h3 class="text-center font-semibold text-4xl">My Environment 🖥️</h3>
+				<ul class="mt-6 flex flex-wrap justify-center gap-8 overflow-visible">
 					<li>
 						<Card name="NixOS" icon={SiNixos} />
 					</li>
@@ -56,9 +54,9 @@ export default function Home() {
 				</ul>
 			</section>
 
-			<section class="my-12 animate-fade animate-delay-[4500ms]">
-				<h3 class="text-4xl font-semibold text-center">Languages I ❤️</h3>
-				<ul class="flex mt-6 gap-8 overflow-visible flex-wrap justify-center">
+			<section class="my-12 animate-delay-[4500ms] animate-fade">
+				<h3 class="text-center font-semibold text-4xl">Languages I ❤️</h3>
+				<ul class="mt-6 flex flex-wrap justify-center gap-8 overflow-visible">
 					<li>
 						<Card name="TypeScript" icon={BiLogosTypescript} />
 					</li>

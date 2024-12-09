@@ -11,7 +11,7 @@ function NavLink(props: {
 			<A
 				inactiveClass="border-transparent hover:border-gray-200"
 				activeClass="border-gray-200"
-				class="transition-all border-b-2 mx-1.5 sm:mx-6 flex items-center gap-2"
+				class="mx-1.5 flex items-center gap-2 border-b-2 transition-all sm:mx-6"
 				href={props.href}
 				target={props.external ? "_blank" : undefined}
 				end

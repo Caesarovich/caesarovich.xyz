@@ -6,20 +6,20 @@ import "./app.css";
 import Nav from "./components/Nav";
 
 export default function App() {
-  return (
-    <Router
-      root={(props) => (
-        <>
-          <MetaProvider>
-            <Title>Caesarovich</Title>
-          </MetaProvider>
+	return (
+		<Router
+			root={(props) => (
+				<>
+					<MetaProvider>
+						<Title>Caesarovich</Title>
+					</MetaProvider>
 
-          <Nav />
-          <Suspense>{props.children}</Suspense>
-        </>
-      )}
-    >
-      <FileRoutes />
-    </Router>
-  );
+					<Nav />
+					<Suspense>{props.children}</Suspense>
+				</>
+			)}
+		>
+			<FileRoutes />
+		</Router>
+	);
 }
