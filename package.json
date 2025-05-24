@@ -4,7 +4,15 @@
 	"scripts": {
 		"dev": "vinxi dev",
 		"build": "vinxi build",
-		"start": "vinxi start"
+		"start": "vinxi start",
+		"check:all": "biome ci .",
+		"check:format": "biome ci --linter-enabled=false --formatter-enabled=true --organize-imports-enabled=false .",
+		"check:imports": "biome ci --linter-enabled=false --formatter-enabled=false --organize-imports-enabled=true .",
+		"check:lint": "biome ci --linter-enabled=true --formatter-enabled=false --organize-imports-enabled=false .",
+		"fix:all": "biome check --write .",
+		"fix:format": "biome check --linter-enabled=false --formatter-enabled=true --organize-imports-enabled=false --write .",
+		"fix:imports": "biome check --linter-enabled=false --formatter-enabled=false --organize-imports-enabled=true --write .",
+		"fix:lint": "biome check --linter-enabled=true --formatter-enabled=false --organize-imports-enabled=false --write ."
 	},
 	"dependencies": {
 		"@solidjs/meta": "^0.29.4",
