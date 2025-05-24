@@ -10,7 +10,7 @@ type LanguageCardProps = {
 
 function Card(props: LanguageCardProps) {
 	return (
-		<div class="card h-full w-48 animate-fade-up bg-base-300 bg-opacity-30 shadow-xl">
+		<div class="card h-full w-48 animate-fade-up bg-base-300/30 shadow-xl">
 			<div class="card-body items-center justify-evenly">
 				<props.icon class="size-16" />
 				<h2 class="card-title text-center">{props.name}</h2>
