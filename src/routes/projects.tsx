@@ -73,7 +73,7 @@ type ProjectCardProps = Project & {
 function ProjectCard(props: ProjectCardProps) {
 	return (
 		<div
-			class="card animate-fade-up bg-base-300 bg-opacity-30 shadow-xl"
+			class="card animate-fade-up bg-base-300/30 shadow-xl"
 			style={{
 				"animation-delay": `${props.delay}ms`,
 			}}

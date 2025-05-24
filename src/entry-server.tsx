@@ -11,7 +11,7 @@ export default createHandler(() => (
 					<link rel="icon" href="/favicon.ico" />
 					{assets}
 				</head>
-				<body class="bg-gradient-to-br from-purple-900 to-indigo-900">
+				<body class="bg-linear-to-br from-purple-900 to-indigo-900 text-slate-50">
 					<div id="app">{children}</div>
 					{scripts}
 				</body>
