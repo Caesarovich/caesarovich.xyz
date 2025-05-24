@@ -6,6 +6,7 @@ export type Project = {
 	repositryUrl?: string;
 	pubDevUrl?: string;
 	npmUrl?: string;
+	websiteUrl?: string;
 	tags?: ProjectTagName[];
 };
 
@@ -64,6 +65,24 @@ export const projects: Project[] = [
 			"LocalSend is a free, open-source app that allows you to securely share files and messages with nearby devices over your local network without needing an internet connection.",
 		repositryUrl: "https://github.com/localsend/localsend",
 		tags: ["Maintainer", "Dart", "Flutter", "CI/CD"],
+	},
+	{
+		name: "Maze Generator",
+		description:
+			"A simple web application that generates mazes using different algorithms.",
+		repositryUrl: "https://github.com/Caesarovich/maze-generator",
+		websiteUrl: "https://maze-generator.caesarovich.xyz/",
+		tags: [
+			"Bun",
+			"SolidJS",
+			"SolidStart",
+			"TypeScript",
+			"Biome",
+			"CI/CD",
+			"DaisyUI",
+			"TailwindCSS",
+			"Graphics",
+		],
 	},
 	{
 		name: "GmodCleanup",

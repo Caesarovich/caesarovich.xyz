@@ -1,4 +1,5 @@
 import { A } from "@solidjs/router";
+import { FaSolidGlobe } from "solid-icons/fa";
 import { SiDart, SiNpm } from "solid-icons/si";
 import { VsGithubAlt } from "solid-icons/vs";
 import { For } from "solid-js";
@@ -41,6 +42,18 @@ function NpmButton({ url }: { url?: string }) {
 	);
 }
 
+function WebsiteButton({ url }: { url?: string }) {
+	if (!url) return null;
+
+	return (
+		<div class="tooltip" data-tip="Visit Website">
+			<A target="_blank" href={url} class="btn btn-square btn-outline p-0">
+				<FaSolidGlobe class="size-6" />
+			</A>
+		</div>
+	);
+}
+
 function ProjectTag(props: { name: ProjectTagName }) {
 	const tag = getProjectTag(props.name);
 
@@ -76,6 +89,7 @@ function ProjectCard(props: ProjectCardProps) {
 					<PubDevButton url={props.pubDevUrl} />
 					<NpmButton url={props.npmUrl} />
 					<GithubButton url={props.repositryUrl} />
+					<WebsiteButton url={props.websiteUrl} />
 				</div>
 			</div>
 		</div>
