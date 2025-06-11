@@ -151,6 +151,11 @@ const projectTagsArray = [
 		color: "bg-blue-100 text-blue-800",
 		url: "https://www.postgresql.org/",
 	},
+	{
+		name: "SQLite",
+		color: "bg-blue-100 text-blue-800",
+		url: "https://www.sqlite.org/index.html",
+	},
 
 	// Misc
 	{ name: "CI/CD", color: "bg-green-100 text-green-800" },
