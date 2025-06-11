@@ -41,7 +41,8 @@ export const projects: Project[] = [
 	},
 	{
 		name: "ExGen Hacking CTF",
-		description: "A \"hacking\" challenge meant for my students to learn the basics of Linux commands in a fun way. ",
+		description:
+			'A "hacking" challenge meant for my students to learn the basics of Linux commands in a fun way. ',
 		repositryUrl: "https://github.com/Caesarovich/exgen-hacking-ctf",
 		websiteUrl: "https://exgen-ctf.caesarovich.xyz/play",
 		tags: [
@@ -58,6 +59,22 @@ export const projects: Project[] = [
 			"Docker",
 			"Biome",
 			"CI/CD",
+		],
+	},
+	{
+		name: "Optimus Chat App",
+		description:
+			"A simple chat application built with only Bun for the backend. The frontend is built with React and TailwindCSS. It is a project made with my friend to teach him about Bun and Typescript.",
+		repositryUrl: "https://github.com/Azarielh/Optimus_chat",
+		websiteUrl: "https://optimus-chat.caesarovich.xyz/",
+		tags: [
+			"Bun",
+			"TypeScript",
+			"React",
+			"TailwindCSS",
+			"DaisyUI",
+			"WebSockets",
+			"Docker",
 		],
 	},
 	{

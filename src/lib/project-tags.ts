@@ -120,6 +120,11 @@ const projectTagsArray = [
 		color: "bg-blue-100 text-blue-800",
 		url: "https://www.sapphirejs.dev/",
 	},
+	{
+		name: "React",
+		color: "bg-blue-100 text-blue-800",
+		url: "https://reactjs.org/",
+	},
 
 	// Services
 	{
@@ -163,6 +168,7 @@ const projectTagsArray = [
 	{ name: "Maintainer", color: "bg-green-100 text-green-800" },
 	{ name: "Tool", color: "bg-green-100 text-green-800" },
 	{ name: "Cybersecurity", color: "bg-red-100 text-red-800" },
+	{ name: "WebSockets", color: "bg-blue-100 text-blue-800" },
 	{
 		name: "42",
 		color: "bg-blue-100 text-blue-800",
