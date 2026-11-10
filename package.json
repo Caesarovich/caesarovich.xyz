@@ -2,9 +2,9 @@
 	"name": "example-with-tailwindcss",
 	"type": "module",
 	"scripts": {
-		"dev": "vinxi dev",
-		"build": "vinxi build",
-		"start": "vinxi start",
+		"dev": "vite dev",
+		"build": "vite build",
+		"start": "vite start",
 		"check:all": "biome ci .",
 		"check:format": "biome ci --linter-enabled=false --formatter-enabled=true --organize-imports-enabled=false .",
 		"check:imports": "biome ci --linter-enabled=false --formatter-enabled=false --organize-imports-enabled=true .",
@@ -16,21 +16,20 @@
 	},
 	"dependencies": {
 		"@solidjs/meta": "^0.29.8",
-		"@solidjs/router": "^0.15.4",
-		"@solidjs/start": "^1.5.1",
+		"@solidjs/router": "^1.0.1",
+		"@solidjs/start": "^2.2.2",
 		"@tailwindcss/postcss": "^4.3.5",
 		"@tailwindcss/vite": "^4.3.5",
-		"@vercel/analytics": "^1.6.1",
+		"@vercel/analytics": "^2.0.1",
 		"daisyui": "^5.7.50",
 		"postcss": "^8.5.32",
 		"solid-icons": "^1.2.0",
 		"solid-js": "^1.9.18",
 		"tailwindcss": "^4.3.5",
-		"tailwindcss-animated": "^2.1.0",
-		"vinxi": "^0.5.11"
+		"tailwindcss-animated": "^2.1.0"
 	},
 	"engines": {
-		"node": ">=18"
+		"node": ">=24"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4"
