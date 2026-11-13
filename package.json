@@ -22,6 +22,7 @@
 		"@tailwindcss/vite": "^4.3.5",
 		"@vercel/analytics": "^2.0.1",
 		"daisyui": "^5.7.50",
+		"nitro": "^3.0.261103-rc",
 		"postcss": "^8.5.32",
 		"solid-icons": "^1.2.0",
 		"solid-js": "^1.9.18",
