@@ -3,7 +3,7 @@ import { FaSolidGlobe } from "solid-icons/fa";
 import { SiDart, SiNpm } from "solid-icons/si";
 import { VsGithubAlt } from "solid-icons/vs";
 import { For } from "solid-js";
-import { type ProjectTagName, getProjectTag } from "~/lib/project-tags";
+import { getProjectTag, type ProjectTagName } from "~/lib/project-tags";
 import { type Project, projects } from "~/lib/projects";
 
 function GithubButton({ url }: { url?: string }) {

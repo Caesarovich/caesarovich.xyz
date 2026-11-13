@@ -1,5 +1,5 @@
 // @refresh reload
-import { StartClient, mount } from "@solidjs/start/client";
+import { mount, StartClient } from "@solidjs/start/client";
 import { inject } from "@vercel/analytics";
 
 inject();

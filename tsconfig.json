@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-    "types": ["@solidjs/start/env"],
+		"types": ["@solidjs/start/env"],
 		"target": "ESNext",
 		"module": "ESNext",
 		"moduleResolution": "bundler",
